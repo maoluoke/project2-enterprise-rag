@@ -1,0 +1,305 @@
+{
+  "top_k": 5,
+  "recall_k": 50,
+  "alpha": 0.5,
+  "fusion": "weighted",
+  "modes": {
+    "bm25": {
+      "mode": "bm25",
+      "questions": 500,
+      "answerable": 470,
+      "hit_rate": 0.6127659574468085,
+      "mrr": 0.49085106382978716,
+      "recall": 0.5544199594731508,
+      "no_answer_questions": 30,
+      "no_answer_empty_rate": 0.0,
+      "latency_p50_ms": 5.724560998714878,
+      "latency_p95_ms": 7.058639001115807,
+      "per_type": {
+        "basic": {
+          "n": 175,
+          "hit_rate": 0.64,
+          "mrr": 0.5023809523809524,
+          "recall": 0.64
+        },
+        "semantic": {
+          "n": 125,
+          "hit_rate": 0.24,
+          "mrr": 0.15186666666666668,
+          "recall": 0.24
+        },
+        "intra_document_reasoning": {
+          "n": 40,
+          "hit_rate": 0.75,
+          "mrr": 0.5674999999999999,
+          "recall": 0.75
+        },
+        "project_related": {
+          "n": 40,
+          "hit_rate": 0.95,
+          "mrr": 0.8508333333333333,
+          "recall": 0.5240972222222223
+        },
+        "constrained": {
+          "n": 30,
+          "hit_rate": 0.9,
+          "mrr": 0.801111111111111,
+          "recall": 0.8666666666666667
+        },
+        "conflicting_info": {
+          "n": 20,
+          "hit_rate": 0.95,
+          "mrr": 0.8375,
+          "recall": 0.875
+        },
+        "completeness": {
+          "n": 20,
+          "hit_rate": 0.75,
+          "mrr": 0.675,
+          "recall": 0.3556746031746032
+        },
+        "miscellaneous": {
+          "n": 20,
+          "hit_rate": 0.85,
+          "mrr": 0.6391666666666667,
+          "recall": 0.85
+        },
+        "high_level": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        },
+        "info_not_found": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "vector": {
+      "mode": "vector",
+      "questions": 500,
+      "answerable": 470,
+      "hit_rate": 0.6553191489361702,
+      "mrr": 0.5703900709219858,
+      "recall": 0.5972602161431949,
+      "no_answer_questions": 30,
+      "no_answer_empty_rate": 0.0,
+      "latency_p50_ms": 17.415365000488237,
+      "latency_p95_ms": 19.106601999737904,
+      "per_type": {
+        "basic": {
+          "n": 175,
+          "hit_rate": 0.6285714285714286,
+          "mrr": 0.5492380952380953,
+          "recall": 0.6285714285714286
+        },
+        "semantic": {
+          "n": 125,
+          "hit_rate": 0.48,
+          "mrr": 0.3762666666666667,
+          "recall": 0.48
+        },
+        "intra_document_reasoning": {
+          "n": 40,
+          "hit_rate": 0.775,
+          "mrr": 0.6633333333333333,
+          "recall": 0.775
+        },
+        "project_related": {
+          "n": 40,
+          "hit_rate": 0.85,
+          "mrr": 0.7883333333333333,
+          "recall": 0.47006944444444454
+        },
+        "constrained": {
+          "n": 30,
+          "hit_rate": 0.8666666666666667,
+          "mrr": 0.7899999999999999,
+          "recall": 0.8333333333333334
+        },
+        "conflicting_info": {
+          "n": 20,
+          "hit_rate": 0.65,
+          "mrr": 0.6,
+          "recall": 0.525
+        },
+        "completeness": {
+          "n": 20,
+          "hit_rate": 0.85,
+          "mrr": 0.7666666666666667,
+          "recall": 0.4204761904761905
+        },
+        "miscellaneous": {
+          "n": 20,
+          "hit_rate": 0.85,
+          "mrr": 0.7916666666666666,
+          "recall": 0.85
+        },
+        "high_level": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        },
+        "info_not_found": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "hybrid": {
+      "mode": "hybrid",
+      "questions": 500,
+      "answerable": 470,
+      "hit_rate": 0.7808510638297872,
+      "mrr": 0.6864184397163121,
+      "recall": 0.7347543059777102,
+      "no_answer_questions": 30,
+      "no_answer_empty_rate": 0.0,
+      "latency_p50_ms": 23.08742999957758,
+      "latency_p95_ms": 25.487259999863454,
+      "per_type": {
+        "basic": {
+          "n": 175,
+          "hit_rate": 0.7942857142857143,
+          "mrr": 0.6875238095238095,
+          "recall": 0.7942857142857143
+        },
+        "semantic": {
+          "n": 125,
+          "hit_rate": 0.584,
+          "mrr": 0.4388000000000001,
+          "recall": 0.584
+        },
+        "intra_document_reasoning": {
+          "n": 40,
+          "hit_rate": 0.925,
+          "mrr": 0.8445833333333332,
+          "recall": 0.925
+        },
+        "project_related": {
+          "n": 40,
+          "hit_rate": 0.95,
+          "mrr": 0.9125,
+          "recall": 0.6288888888888889
+        },
+        "constrained": {
+          "n": 30,
+          "hit_rate": 0.9333333333333333,
+          "mrr": 0.8944444444444444,
+          "recall": 0.9333333333333333
+        },
+        "conflicting_info": {
+          "n": 20,
+          "hit_rate": 0.8,
+          "mrr": 0.7666666666666667,
+          "recall": 0.75
+        },
+        "completeness": {
+          "n": 20,
+          "hit_rate": 0.85,
+          "mrr": 0.825,
+          "recall": 0.4589484126984127
+        },
+        "miscellaneous": {
+          "n": 20,
+          "hit_rate": 0.95,
+          "mrr": 0.925,
+          "recall": 0.95
+        },
+        "high_level": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        },
+        "info_not_found": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "mode": "hybrid_rerank",
+      "questions": 500,
+      "answerable": 470,
+      "hit_rate": 0.7808510638297872,
+      "mrr": 0.6945035460992908,
+      "recall": 0.7257590341100977,
+      "no_answer_questions": 30,
+      "no_answer_empty_rate": 0.0,
+      "latency_p50_ms": 142.31657600066683,
+      "latency_p95_ms": 165.23828199933632,
+      "per_type": {
+        "basic": {
+          "n": 175,
+          "hit_rate": 0.8285714285714286,
+          "mrr": 0.7511428571428571,
+          "recall": 0.8285714285714286
+        },
+        "semantic": {
+          "n": 125,
+          "hit_rate": 0.52,
+          "mrr": 0.36186666666666667,
+          "recall": 0.52
+        },
+        "intra_document_reasoning": {
+          "n": 40,
+          "hit_rate": 0.925,
+          "mrr": 0.88125,
+          "recall": 0.925
+        },
+        "project_related": {
+          "n": 40,
+          "hit_rate": 0.975,
+          "mrr": 0.9333333333333332,
+          "recall": 0.6299305555555557
+        },
+        "constrained": {
+          "n": 30,
+          "hit_rate": 0.9,
+          "mrr": 0.83,
+          "recall": 0.8166666666666667
+        },
+        "conflicting_info": {
+          "n": 20,
+          "hit_rate": 0.85,
+          "mrr": 0.85,
+          "recall": 0.75
+        },
+        "completeness": {
+          "n": 20,
+          "hit_rate": 0.9,
+          "mrr": 0.875,
+          "recall": 0.5204761904761904
+        },
+        "miscellaneous": {
+          "n": 20,
+          "hit_rate": 0.95,
+          "mrr": 0.8875,
+          "recall": 0.95
+        },
+        "high_level": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        },
+        "info_not_found": {
+          "n": 0,
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "recall": 0.0
+        }
+      }
+    }
+  },
+  "relative_gain_vs_base_pct": 27.43
+}

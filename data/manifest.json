@@ -1,0 +1,19 @@
+{
+  "source": "EnterpriseRAG-Bench (onyx-dot-app)",
+  "sample_size": 20000,
+  "full_corpus_size": 511962,
+  "golden_questions": 500,
+  "gold_docs": 722,
+  "gold_docs_in_sample": 723,
+  "source_counts": {
+    "slack": 10786,
+    "gmail": 4639,
+    "linear": 1430,
+    "google_drive": 1047,
+    "hubspot": 581,
+    "confluence": 428,
+    "fireflies": 401,
+    "github": 354,
+    "jira": 334
+  }
+}

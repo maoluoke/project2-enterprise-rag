@@ -1,0 +1,31 @@
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ===== 大体积派生数据（可从 EnterpriseRAG-Bench 重建）=====
+data/docs.jsonl
+docstore/
+
+# ===== ES / Redis 运行时数据 =====
+es_data/
+es_logs/
+redis_data/
+*.log
+
+# ===== 评估中间产物（可选保留报告，这里只排除大文件）=====
+# data/eval_report_*.json  → 保留，方便面试官看效果
+
+# ===== IDE / 系统 =====
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# ===== 环境变量 / 密钥 =====
+.env
+.env.local
